@@ -8,7 +8,21 @@
 </head>
 <body>
 
-<%= yield %>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div>
+      <ul class="nav navbar-nav">
+      	<li><a href="#">Treebook!</a></li>
+        <li> <%= link_to "All Statuses", statuses_path %>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container">
+	<%= yield %>
+</div>
 
 </body>
 </html>
